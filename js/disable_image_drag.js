@@ -1,0 +1,1 @@
+document.getElementById('felt').ondragstart = function() { return false; };

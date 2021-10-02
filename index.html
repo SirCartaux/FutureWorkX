@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<link rel="stylesheet" href="main.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureWork X</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/874691518676488272/893823751446229022/Logo-Main-Colored_quadrat.png">
+</head>
+<body>
+    <script src="js/tab_system.js"></script>
+    <script src="js/time_system.js"></script>
+    <script src="js/disable_image_drag.js"></script>
+
+    <img class="tab" src="" alt="">
+    <div class = "main">
+
+    <div class = "sidebar plate plateBigger" id="sidebar_id">
+        <div class="sidebarTop">
+            <img class="tab" id="felt" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Haus Icon" onclick="swichTab('tab_Home')"><br>
+            <img class="tab" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon" onclick="swichTab('tab_Chat')"><br>
+            <img class="tab" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/easel.png" alt="Galerie Icon" onclick="swichTab('tab_Showcase')"><br>
+            <img class="tab" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/link.png" alt="Link Icon" onclick="swichTab('tab_Links')"><br>
+            <img class="tab" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/fsolder.png" alt="Ordner Icon" onclick="swichTab('tab_Files')"><br>
+            <img class="tab" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/clipboard.png" alt="Clipboard Icon" onclick="swichTab('tab_Applies')"><br>
+        </div>
+        <div class="sidebarBottom">
+            <img class="tab" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/settings.png" alt="Einstellungs Icon" onclick="swichTab('tab_Settings')"><br>
+        </div>
+    </div>
+    <div class = "window plate plateBigger" id="window_id">
+        <div id="tab_Home" class="tabcontent">
+            <div class="center">
+                <h1 id="text_hm" style=font-size:50px></h1>
+                <p id="clock_hm" style=font-size:20px></p>
+            </div>
+        </div>
+        <div id="tab_Chat" class="tabcontent hidden">
+            <!--Chat-->
+            <div class="chatWindow">
+                <div class="plate chatelement channelsWindow" style="border-radius: 25px; height: 645px;">
+                <div class="plate" style="display: flex; padding: 10px 10px 10px 10px; border-radius: 25px; height: 100px;">
+                    <img class="serverIcon" src="https://cdn.discordapp.com/attachments/815628519492288524/893560011354153002/Future_Studios_Logo_better.png" alt="Future Studios Logo">
+                    <div>
+                        <h1>Future Studios</h1>
+                        <p>X Mitglieder | X Online<p>
+                    </div>
+                </div>
+                <div class="channels">
+
+
+
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Chat Icon">
+                        <p>Meeting Hub</p>
+                    </div>
+
+
+
+                    <p>News, Infos & Mehr</p>
+
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Chat Icon">
+                        <p>News</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Chat Icon">
+                        <p>Self Roles</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Chat Icon">
+                        <p>Release Dates</p>
+                    </div>
+
+
+
+                    <p>Haupt Chats</p>
+
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>Chat</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>Zitate</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Chat Icon">
+                        <p>Talk</p>
+                    </div>
+
+
+
+                    <p>Büros</p>
+
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Chat Icon">
+                        <p>Kirah's Büro</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Chat Icon">
+                        <p>Cartaux' Büro</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Chat Icon">
+                        <p>Besenkammer</p>
+                    </div>
+
+
+
+                    <p>Projekte</p>
+
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>Principium</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>FutureDirects</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>endiversum.com</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>Into the Kirahverse</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>2083</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>End Story</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>INSANE</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>USS</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>Go Beyond</p>
+                    </div>
+
+
+
+                    <p>Future Lobby</p>
+
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Haus Icon">
+                        <p>Modpack Update</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>Chat</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>Ideen</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Haus Icon">
+                        <p>Baupläne-ITK</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Haus Icon">
+                        <p>Baupläne-2083</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/messenger.png" alt="Chat Icon">
+                        <p>Dinge die zum Crash führen</p>
+                    </div>
+                    <div class="channel plate plateBigger">
+                        <img class="channelIcon" src="http://cartaux.verbindlichkeit.de/images/icons/tabs/home.png" alt="Haus Icon">
+                        <p>Talk</p>
+                    </div>
+                </div>
+                </div>
+            </div> <!--Linker Div vom Chat-->
+
+            <div>
+
+            </div class="messagesWindow chatelement"> <!--Mittlerer Div vom Chat-->
+                mitte (nachrichten)
+            <div class="memberWindow plate chatelement" style="border-radius: 25px; height: 645px;">
+                rechts (member)
+            </div> <!--Rechter Div vom Chat-->
+
+        </div>
+        <div id="tab_Showcase" class="tabcontent hidden">
+            <h1>Showcase</h1>
+        </div>
+        <div id="tab_Links" class="tabcontent hidden">
+            <h1>Links</h1>
+        </div>
+        <div id="tab_Files" class="tabcontent hidden">
+            <h1>Dateien</h1>
+        </div>
+        <div id="tab_Applies" class="tabcontent hidden">
+            <h1>Bewerbungen</h1>
+        </div>
+        <div id="tab_Settings" class="tabcontent hidden">
+            <h1>Einstellungen</h1>
+        </div>
+    </div>
+    </div>
+
+    <div class = "workbar plate plateBigger" id="workbar_id">
+        <div id="tab_Home2" class="tabcontent2">
+            <!--home-->
+            <p>Witz des Tages:&nbsp;<p>
+            <p>Ray hat so viele Google-Accounts wie es Atome in beobachtbaren Universum gibt.</p>
+        </div>
+        <div class="tabcontent active" id="tab_Home">
+            <p>Home</p>
+        </div>
+        <div class="tabcontent hidden" id="tab_Chat">
+            <p>Chat</p>
+        </div>
+        <div class="tabcontent hidden" id="tab_Showcase">
+            <p>Showcase</p>
+        </div>
+        <div class="tabcontent hidden" id="tab_Links">
+            <p>Links</p>
+        </div>
+        <div class="tabcontent hidden" id="tab_Files">
+            <p>Files</p>
+        </div>
+        <div class="tabcontent hidden" id="tab_Applies">
+            <p>Applies</p>
+        </div>
+        <div class="tabcontent hidden" id="tab_Settings">
+            <p>Settings</p>
+        </div>
+    </div>
+</body>
+</html>
