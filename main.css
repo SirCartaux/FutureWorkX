@@ -297,7 +297,6 @@ body {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 3;*/
-    background-color: green;
     transform: translate(100%, -100%);
     position: fixed;
     text-align: right;
