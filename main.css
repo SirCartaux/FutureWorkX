@@ -274,8 +274,7 @@ body {
 
 
 .chatWindow { /*Das komplette Chat Window*/
-    background-color: red;
-    translate: 10 10;
+    transform: translate(-20px, -20px);
 }
 
 .channelsWindow { /*Das Div mit den Channels und Server Name*/
@@ -345,7 +344,7 @@ div {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 
-    outline: red dotted 2px; 
+    /*outline: red dotted 2px; */
     /*Wenn du die Outline deaktivieren willst
     mache es bitte in dem du sie kommentierst*/
 }
