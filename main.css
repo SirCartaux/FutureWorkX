@@ -230,9 +230,8 @@ body {
 
 .channels {
     overflow-y: scroll;
-    height: 650px;
     padding: 25px 25px 25px 25px;
-
+    height: 75%;
 
 }
 
@@ -271,10 +270,10 @@ body {
 
 
 
-
-
 .chatWindow { /*Das komplette Chat Window*/
     transform: translate(-20px, -20px);
+    display: flex;
+
 }
 
 .channelsWindow { /*Das Div mit den Channels und Server Name*/
@@ -282,7 +281,6 @@ body {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;*/
-    top: 0px;
 }
 
 .messagesWindow { /*Das Div mit den Nachrichten*/
@@ -290,7 +288,8 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;*/
-    transform: translateX(10px);
+    transform: translate(310px, -680px);
+    background-color: yellow;
 }
 
 .memberWindow { /*Das Div mit der Memberliste*/
@@ -298,12 +297,15 @@ body {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 3;*/
-    padding: 50px 59px 50px 50px;
+    background-color: green;
+    transform: translate(100%, -100%);
+    position: fixed;
+    text-align: right;
+    width: 335px;
 }
 
 .chatelement { /*Das ist jedes Div im Chat Window, also channelsWindow, messagesWindow und memberWindow*/
-    display: inline-block;
-    display: table-cell;
+    max-height: 720px;
 }
 
 
@@ -344,7 +346,7 @@ div {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 
-    /*outline: red dotted 2px; */
+    outline: red dotted 2px; 
     /*Wenn du die Outline deaktivieren willst
     mache es bitte in dem du sie kommentierst*/
 }
