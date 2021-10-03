@@ -322,11 +322,58 @@ body {
         width: 100%;
         transform: translate(-5px, 0px);
         border-radius: 100%;
+        -webkit-transform:scale(1.05);
+        -moz-transform:scale(1.05);
+        animation: plateSmaller 0.1s;
+        animation-fill-mode: forwards; 
+        transform-origin:center center;
     }
 
+    .messagePfP:active {
+        -webkit-transform:scale(1.05);
+        -moz-transform:scale(1.05);
+        animation: plateSmaller 0.1s;
+        animation-fill-mode: forwards; 
+        transform-origin:center center;
+    }
+
+    .messagePfp:hover {
+        cursor: pointer;
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        animation: plateBigger 0.2s;
+        animation-fill-mode: forwards; 
+        transform-origin:center center;
+    }
+
+
+
+
     .messageImg {
-        border-radius: 50px;
+        border-radius: 25px;
         width: 25%;
+        -webkit-transform:scale(1.05);
+        -moz-transform:scale(1.05);
+        animation: plateSmaller 0.1s;
+        animation-fill-mode: forwards; 
+        transform-origin:center center;
+    }
+
+    .messageImg:active {
+        -webkit-transform:scale(1.05);
+        -moz-transform:scale(1.05);
+        animation: plateSmaller 0.1s;
+        animation-fill-mode: forwards; 
+        transform-origin:center center;
+    }
+
+    .messageImg:hover {
+        cursor: pointer;
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        animation: plateBigger 0.2s;
+        animation-fill-mode: forwards; 
+        transform-origin:center center;
     }
 
     .message {
