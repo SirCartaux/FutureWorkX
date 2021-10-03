@@ -10,6 +10,11 @@ body * {
     100% {opacity: 100%;}
 }
 
+@keyframes fadeOut {
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
 
 
 
@@ -91,10 +96,6 @@ body {
     display: flex;
     height: 50%;
     flex-direction: column-reverse;
-}
-
-.tabcontent2 {
-    display: flex;
 }
 
 .window {
@@ -270,37 +271,33 @@ body {
 
 
 
-.chatWindow { /*Das komplette Chat Window*/
-    transform: translate(-20px, -20px);
-    display: flex;
-
+.tab_Chat { /*Das komplette Chat Window*/
+    display: grid;
+    grid-template-columns: 350px 1fr 350px ;
+    grid-template-rows: 1fr;
 }
 
+
 .channelsWindow { /*Das Div mit den Channels und Server Name*/
-    /*grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 1;*/
+    grid-row-end: 2;
 }
 
 .messagesWindow { /*Das Div mit den Nachrichten*/
-    /*grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;*/
-    transform: translate(310px, -680px);
-    background-color: yellow;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .memberWindow { /*Das Div mit der Memberliste*/
-    /*grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3;*/
-    transform: translate(100%, -100%);
-    position: fixed;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
     text-align: right;
-    width: 335px;
 }
 
 .chatelement { /*Das ist jedes Div im Chat Window, also channelsWindow, messagesWindow und memberWindow*/
@@ -318,7 +315,7 @@ body {
     width: 11px;
 
   }
-  
+
   ::-webkit-scrollbar-track {
     border-radius: 50px;
     background: #275894;
