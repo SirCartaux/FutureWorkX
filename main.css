@@ -197,11 +197,12 @@ body {
 @keyframes plateSmaller {
     0% {
         -webkit-transform:scale(1.025); 
-        -moz-transform:scale(1.025);}
+        -moz-transform:scale(1.025);
+    }
     100% {
         -webkit-transform:scale(1); 
         -moz-transform:scale(1);
-    }
+        }
 }
 
 .tabHome {
@@ -269,43 +270,28 @@ body {
 }
 
 
-
-
-.tab_Chat { /*Das komplette Chat Window*/
+.chatWindow {
     display: grid;
-    grid-template-columns: 350px 1fr 350px ;
+    width: 10000px;
+    grid-template-columns: 350px 1fr 350px;
     grid-template-rows: 1fr;
+    
 }
 
-
-.channelsWindow { /*Das Div mit den Channels und Server Name*/
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.channelsWindow {
+    grid-column: 1 / 2;
 }
 
-.messagesWindow { /*Das Div mit den Nachrichten*/
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.messagesWindow {
+    grid-column: 2 / 3;
+    overflow-y: scroll;
 }
 
-.memberWindow { /*Das Div mit der Memberliste*/
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.memberWindow {
+    grid-column: 3 / 4;
+    overflow-y: scroll;
     text-align: right;
 }
-
-.chatelement { /*Das ist jedes Div im Chat Window, also channelsWindow, messagesWindow und memberWindow*/
-    max-height: 720px;
-}
-
-
-
 
 
 
@@ -330,7 +316,71 @@ body {
     background: #78c3f1;
   }
 
-  
+/*Alles mögliche für eine Nachricht*/
+
+    .messagePfP {
+        width: 100%;
+        transform: translate(-5px, 0px);
+        border-radius: 100%;
+    }
+
+    .messageImg {
+        border-radius: 50px;
+        width: 25%;
+    }
+
+    .message {
+        border-radius: 25px;
+        margin: 35px;
+        padding: 15px;
+    }
+
+    .messageInfos {
+        border-radius: 25px;
+        padding: 10px;
+        height: 35px;
+        display: flex;
+    }
+
+    .messageInfos * {
+        transform: translateY(-15px);
+    }
+
+    .messageInfos h1 {
+        font-size: 10px;
+    }
+
+    .messageInfos p {
+        font-size: 12px;
+        transform: translate(5px, 4px);
+    }
+
+
+
+
+
+    /*Grid der Nachricht*/
+    .message {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+    }
+
+    .messagePfpDiv {
+        grid-column: 1 / 2;
+    }
+
+    .messageInfos {
+        grid-column: 2 / 3;
+    }
+
+    .messageContent {
+        grid-column: 2 / 3;
+    }
+
+
+
+
+
 
 
 
@@ -342,7 +392,7 @@ div {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 
-    outline: red dotted 2px; 
+    /*outline: red dotted 2px;*/
     /*Wenn du die Outline deaktivieren willst
     mache es bitte in dem du sie kommentierst*/
 }
